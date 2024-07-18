@@ -4,24 +4,28 @@ import 'package:firebase_auth/firebase_auth.dart';
 class Auth extends StatelessWidget {
   final Widget Function(BuildContext) loggedInBuilder;
   final Widget Function(BuildContext) notLoggedInBuilder;
+  final Color backgroundColor; 
+  final Color loadingColor;
 
   const Auth({
     required this.loggedInBuilder,
     required this.notLoggedInBuilder,
+    this.backgroundColor = Colors.white,
+    this.loadingColor = Colors.black,
     Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: backgroundColor,
       body: StreamBuilder<User?>(
         stream: FirebaseAuth.instance.authStateChanges(),
         builder: (BuildContext context, AsyncSnapshot<User?> snapshot) {
           if (snapshot.connectionState == ConnectionState.waiting) {
-            return const Center(
+            return  Center(
               child: CircularProgressIndicator(
-                color: Colors.black,
+                color: loadingColor,
               ),
             );
           } else {
