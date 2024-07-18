@@ -21,8 +21,7 @@ This package provides an `Auth` widget that seamlessly integrates with Firebase 
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+flutter pub add flutter_auth_helper
 
 ## Usage
 
