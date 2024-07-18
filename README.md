@@ -21,7 +21,7 @@ This package provides an `Auth` widget that seamlessly integrates with Firebase 
 
 ## Getting started
 
-flutter pub add firebase_auth_helper
+flutter pub add firebase_auth_handler
 
 ## Usage
 
@@ -30,7 +30,7 @@ To use this package, include the `Auth` widget in your app and provide builders 
 ```dart
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
-import 'package:firebase_auth_helper/firebase_auth_helper.dart';
+import 'package:firebase_auth_handler/firebase_auth_handler.dart';
 
 void main() {
   runApp(MyApp());

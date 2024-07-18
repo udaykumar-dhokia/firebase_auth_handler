@@ -1,7 +1,7 @@
-name: firebase_auth_helper
+name: firebase_auth_handler
 description: "A Flutter package that simplifies authentication state management and handles navigation to different pages based on whether the user is logged in or not."
 version: 0.0.1
-homepage: https://github.com/udaykumar-dhokia/firebase_auth_helper
+homepage: https://github.com/udaykumar-dhokia/firebase_auth_handler
 
 environment:
   sdk: '>=3.4.3 <4.0.0'
